@@ -1,0 +1,2213 @@
+{
+  "users": [
+    {
+      "id": "user_student_1",
+      "email": "student@edumathai.com",
+      "passwordHash": "32e9bcf567e122663c78aac8559cb4c1d587bf5cc7dbeac18104031dd3825fe1",
+      "role": "STUDENT",
+      "firstName": "Aarav",
+      "lastName": "Sharma",
+      "phone": "+91 98765 43210",
+      "avatarUrl": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=160&q=80",
+      "isActive": true,
+      "createdAt": "2026-08-15T09:00:00.000Z"
+    },
+    {
+      "id": "user_teacher_1",
+      "email": "teacher@edumathai.com",
+      "passwordHash": "32e9bcf567e122663c78aac8559cb4c1d587bf5cc7dbeac18104031dd3825fe1",
+      "role": "TEACHER",
+      "firstName": "Dr. Sunita",
+      "lastName": "Rao",
+      "phone": "+91 98480 12345",
+      "avatarUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=160&q=80",
+      "isActive": true,
+      "createdAt": "2026-07-10T08:30:00.000Z"
+    },
+    {
+      "id": "user_parent_1",
+      "email": "parent@edumathai.com",
+      "passwordHash": "32e9bcf567e122663c78aac8559cb4c1d587bf5cc7dbeac18104031dd3825fe1",
+      "role": "PARENT",
+      "firstName": "Vikram",
+      "lastName": "Sharma",
+      "phone": "+91 94400 98765",
+      "avatarUrl": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=160&q=80",
+      "isActive": true,
+      "createdAt": "2026-08-16T11:00:00.000Z"
+    },
+    {
+      "id": "user_schooladmin_1",
+      "email": "schooladmin@edumathai.com",
+      "passwordHash": "32e9bcf567e122663c78aac8559cb4c1d587bf5cc7dbeac18104031dd3825fe1",
+      "role": "SCHOOL_ADMIN",
+      "firstName": "Principal R. K.",
+      "lastName": "Verma",
+      "phone": "+91 98220 54321",
+      "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=160&q=80",
+      "isActive": true,
+      "createdAt": "2026-06-01T10:00:00.000Z"
+    },
+    {
+      "id": "user_admin_1",
+      "email": "admin@edumathai.com",
+      "passwordHash": "32e9bcf567e122663c78aac8559cb4c1d587bf5cc7dbeac18104031dd3825fe1",
+      "role": "PLATFORM_ADMIN",
+      "firstName": "System",
+      "lastName": "Administrator",
+      "phone": "+91 80000 00001",
+      "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=160&q=80",
+      "isActive": true,
+      "createdAt": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "studentProfiles": [
+    {
+      "id": "sp_1",
+      "userId": "user_student_1",
+      "schoolId": "school_1",
+      "curriculum": "CBSE",
+      "grade": "Class 9",
+      "guardianName": "Vikram Sharma",
+      "guardianEmail": "parent@edumathai.com",
+      "streakDays": 7,
+      "totalPoints": 1480,
+      "practiceQuestionsAttempted": 125,
+      "practiceQuestionsCorrect": 104,
+      "overallProgressPercentage": 68,
+      "chaptersCompleted": 8,
+      "testAverage": 82
+    }
+  ],
+  "teacherProfiles": [
+    {
+      "id": "tp_1",
+      "userId": "user_teacher_1",
+      "schoolId": "school_1",
+      "subject": "Mathematics",
+      "designation": "Senior PGT Mathematics",
+      "classesAssigned": [
+        "Class 9-A",
+        "Class 9-B"
+      ]
+    }
+  ],
+  "parentProfiles": [
+    {
+      "id": "pp_1",
+      "userId": "user_parent_1",
+      "studentId": "user_student_1",
+      "studentEmail": "student@edumathai.com"
+    }
+  ],
+  "schools": [
+    {
+      "id": "school_1",
+      "name": "Delhi Public International School",
+      "code": "DPIS-HYD-09",
+      "city": "Hyderabad",
+      "state": "Telangana & AP Region",
+      "board": "CBSE & AP State Board",
+      "totalStudents": 420,
+      "totalTeachers": 28,
+      "averageScore": 78.4,
+      "passRate": 94.2
+    },
+    {
+      "id": "school_2",
+      "name": "St. Xavier High School",
+      "code": "SXHS-VIZ-04",
+      "city": "Visakhapatnam",
+      "state": "Andhra Pradesh",
+      "board": "AP State Board",
+      "totalStudents": 310,
+      "totalTeachers": 22,
+      "averageScore": 74.1,
+      "passRate": 91.8
+    }
+  ],
+  "classrooms": [
+    {
+      "id": "class_9a",
+      "schoolId": "school_1",
+      "name": "Class 9-A",
+      "grade": "Class 9",
+      "section": "A",
+      "teacherId": "user_teacher_1",
+      "studentCount": 38
+    },
+    {
+      "id": "class_9b",
+      "schoolId": "school_1",
+      "name": "Class 9-B",
+      "grade": "Class 9",
+      "section": "B",
+      "teacherId": "user_teacher_1",
+      "studentCount": 36
+    }
+  ],
+  "chapters": [
+    {
+      "id": "chap_1",
+      "number": 1,
+      "title": "Number Systems",
+      "description": "Explore rational & irrational numbers, real numbers and decimal representations, laws of exponents, and rationalizing the denominator.",
+      "curriculum": "BOTH",
+      "difficulty": "Easy",
+      "totalLessons": 6,
+      "totalQuestions": 24,
+      "iconName": "Binary",
+      "learningObjectives": [
+        "Distinguish between rational and irrational numbers",
+        "Represent real numbers on the number line using successive magnification",
+        "Rationalize binomial denominators with square roots",
+        "Apply integral and fractional exponent rules"
+      ],
+      "formulaSummary": [
+        "a^m × a^n = a^(m+n)",
+        "(a^m)^n = a^(m×n)",
+        "1 / (√a + √b) = (√a - √b) / (a - b)",
+        "√a × √b = √(ab)"
+      ],
+      "topics": [
+        {
+          "id": "t_1_1",
+          "chapterId": "chap_1",
+          "title": "Real Numbers & Decimals",
+          "order": 1,
+          "summary": "Terminating, non-terminating recurring, and non-terminating non-recurring decimals."
+        },
+        {
+          "id": "t_1_2",
+          "chapterId": "chap_1",
+          "title": "Irrational Numbers on Number Line",
+          "order": 2,
+          "summary": "Locating √2, √3, √5 geometrically using Pythagoras theorem."
+        },
+        {
+          "id": "t_1_3",
+          "chapterId": "chap_1",
+          "title": "Operations on Real Numbers",
+          "order": 3,
+          "summary": "Addition, subtraction, multiplication, division and rationalization of surds."
+        },
+        {
+          "id": "t_1_4",
+          "chapterId": "chap_1",
+          "title": "Laws of Exponents for Real Numbers",
+          "order": 4,
+          "summary": "Negative powers, fractional indices, and simplifications."
+        }
+      ]
+    },
+    {
+      "id": "chap_2",
+      "number": 2,
+      "title": "Polynomials",
+      "description": "Master polynomials in one variable, zeroes of polynomials, Remainder and Factor theorems, and standard algebraic identities.",
+      "curriculum": "BOTH",
+      "difficulty": "Medium",
+      "totalLessons": 7,
+      "totalQuestions": 28,
+      "iconName": "Calculator",
+      "learningObjectives": [
+        "Define degree and coefficients of polynomials",
+        "Find zeroes of linear, quadratic, and cubic polynomials",
+        "State and apply Remainder Theorem and Factor Theorem",
+        "Expand and factorize expressions using algebraic identities"
+      ],
+      "formulaSummary": [
+        "(x + y + z)^2 = x^2 + y^2 + z^2 + 2xy + 2yz + 2zx",
+        "(x + y)^3 = x^3 + y^3 + 3xy(x + y)",
+        "x^3 + y^3 + z^3 - 3xyz = (x + y + z)(x^2 + y^2 + z^2 - xy - yz - zx)",
+        "If x + y + z = 0, then x^3 + y^3 + z^3 = 3xyz"
+      ],
+      "topics": [
+        {
+          "id": "t_2_1",
+          "chapterId": "chap_2",
+          "title": "Polynomials in One Variable",
+          "order": 1,
+          "summary": "Monomials, binomials, trinomials, degree of polynomial."
+        },
+        {
+          "id": "t_2_2",
+          "chapterId": "chap_2",
+          "title": "Zeroes of a Polynomial",
+          "order": 2,
+          "summary": "Evaluating p(x) and finding roots of algebraic equations."
+        },
+        {
+          "id": "t_2_3",
+          "chapterId": "chap_2",
+          "title": "Remainder Theorem & Factor Theorem",
+          "order": 3,
+          "summary": "Dividing polynomials and factorizing quadratic and cubic polynomials."
+        },
+        {
+          "id": "t_2_4",
+          "chapterId": "chap_2",
+          "title": "Algebraic Identities",
+          "order": 4,
+          "summary": "Applying standard identities for quick expansions and factorizations."
+        }
+      ]
+    },
+    {
+      "id": "chap_3",
+      "number": 3,
+      "title": "Coordinate Geometry",
+      "description": "Understand Cartesian planes, coordinate axes, quadrants, plotting points (x, y), and reading geometrical positions.",
+      "curriculum": "BOTH",
+      "difficulty": "Easy",
+      "totalLessons": 4,
+      "totalQuestions": 18,
+      "iconName": "Compass",
+      "learningObjectives": [
+        "Understand abscissa (x-coordinate) and ordinate (y-coordinate)",
+        "Identify signs of coordinates in Quadrants I, II, III, and IV",
+        "Plot ordered pairs precisely on a Cartesian grid"
+      ],
+      "formulaSummary": [
+        "Origin O = (0, 0)",
+        "Points on x-axis: (x, 0)",
+        "Points on y-axis: (0, y)",
+        "Quadrant I: (+, +), II: (-, +), III: (-, -), IV: (+, -)"
+      ],
+      "topics": [
+        {
+          "id": "t_3_1",
+          "chapterId": "chap_3",
+          "title": "Cartesian System",
+          "order": 1,
+          "summary": "Axes, origin, quadrant division, and orientation."
+        },
+        {
+          "id": "t_3_2",
+          "chapterId": "chap_3",
+          "title": "Plotting Points in Cartesian Plane",
+          "order": 2,
+          "summary": "Locating given coordinates and reading coordinates from graph."
+        }
+      ]
+    },
+    {
+      "id": "chap_4",
+      "number": 4,
+      "title": "Linear Equations in Two Variables",
+      "description": "Learn linear equations ax + by + c = 0, infinite solutions, plotting linear straight-line graphs, and interpreting real-world situations.",
+      "curriculum": "BOTH",
+      "difficulty": "Medium",
+      "totalLessons": 5,
+      "totalQuestions": 22,
+      "iconName": "TrendingUp",
+      "learningObjectives": [
+        "Express equations in standard form ax + by + c = 0",
+        "Find multiple pairs of solutions satisfying the equation",
+        "Draw straight-line graphs and identify lines parallel to axes"
+      ],
+      "formulaSummary": [
+        "Standard form: ax + by + c = 0 (a, b not both zero)",
+        "Equation of x-axis: y = 0",
+        "Equation of y-axis: x = 0",
+        "Line parallel to y-axis: x = k"
+      ],
+      "topics": [
+        {
+          "id": "t_4_1",
+          "chapterId": "chap_4",
+          "title": "Standard Form & Solutions",
+          "order": 1,
+          "summary": "Writing ax + by + c = 0 and determining solution pairs."
+        },
+        {
+          "id": "t_4_2",
+          "chapterId": "chap_4",
+          "title": "Graph of a Linear Equation",
+          "order": 2,
+          "summary": "Plotting solutions to form linear geometric lines."
+        },
+        {
+          "id": "t_4_3",
+          "chapterId": "chap_4",
+          "title": "Lines Parallel to Axes",
+          "order": 3,
+          "summary": "Equations x = a and y = b interpretation."
+        }
+      ]
+    },
+    {
+      "id": "chap_5",
+      "number": 5,
+      "title": "Introduction to Euclid's Geometry",
+      "description": "History of axiomatic mathematics, Euclid's 5 postulates, 7 common axioms, and their role in modern geometrical deduction.",
+      "curriculum": "BOTH",
+      "difficulty": "Easy",
+      "totalLessons": 3,
+      "totalQuestions": 15,
+      "iconName": "Shapes",
+      "learningObjectives": [
+        "Understand definitions, axioms, postulates, and theorems",
+        "Master Euclid’s 5 Postulates, especially the Fifth Postulate",
+        "Apply logical axiomatic deductions"
+      ],
+      "formulaSummary": [
+        "Things equal to same thing are equal to one another",
+        "If equals are added to equals, wholes are equal",
+        "The whole is greater than the part",
+        "Euclid Postulate 5: Parallel postulate"
+      ],
+      "topics": [
+        {
+          "id": "t_5_1",
+          "chapterId": "chap_5",
+          "title": "Euclid's Definitions & Axioms",
+          "order": 1,
+          "summary": "Fundamental geometric building blocks."
+        },
+        {
+          "id": "t_5_2",
+          "chapterId": "chap_5",
+          "title": "Five Postulates & Equivalent Versions",
+          "order": 2,
+          "summary": "Straight lines, right angles, and Playfair’s axiom."
+        }
+      ]
+    },
+    {
+      "id": "chap_6",
+      "number": 6,
+      "title": "Lines and Angles",
+      "description": "Master intersecting and parallel lines, transversals, alternate and corresponding angles, and the triangle angle sum property.",
+      "curriculum": "BOTH",
+      "difficulty": "Medium",
+      "totalLessons": 6,
+      "totalQuestions": 26,
+      "iconName": "Spline",
+      "learningObjectives": [
+        "Prove vertically opposite angles are equal",
+        "Apply corresponding, alternate interior, and co-interior angle theorems",
+        "Deduce exterior angle theorem and angle sum of a triangle"
+      ],
+      "formulaSummary": [
+        "Linear pair sum: ∠1 + ∠2 = 180°",
+        "Vertically opposite angles: ∠A = ∠C",
+        "Angle sum of triangle: ∠A + ∠B + ∠C = 180°",
+        "Exterior angle = sum of two interior opposite angles"
+      ],
+      "topics": [
+        {
+          "id": "t_6_1",
+          "chapterId": "chap_6",
+          "title": "Basic Terms & Intersecting Lines",
+          "order": 1,
+          "summary": "Complementary, supplementary, linear pairs, vertically opposite angles."
+        },
+        {
+          "id": "t_6_2",
+          "chapterId": "chap_6",
+          "title": "Parallel Lines and a Transversal",
+          "order": 2,
+          "summary": "Corresponding angles axiom and alternate angles theorem."
+        },
+        {
+          "id": "t_6_3",
+          "chapterId": "chap_6",
+          "title": "Angle Sum Property of Triangle",
+          "order": 3,
+          "summary": "Proving 180° interior sum and exterior angle properties."
+        }
+      ]
+    },
+    {
+      "id": "chap_7",
+      "number": 7,
+      "title": "Triangles",
+      "description": "Comprehensive study of triangle congruence (SAS, ASA, AAS, SSS, RHS), isosceles triangle properties, and triangle inequalities.",
+      "curriculum": "BOTH",
+      "difficulty": "Hard",
+      "totalLessons": 8,
+      "totalQuestions": 30,
+      "iconName": "Triangle",
+      "learningObjectives": [
+        "State and prove criteria for congruence of triangles",
+        "Prove angles opposite to equal sides of an isosceles triangle are equal",
+        "Apply triangle inequality: sum of any two sides > third side"
+      ],
+      "formulaSummary": [
+        "SAS: Side-Angle-Side congruence",
+        "ASA / AAS: Angle-Side-Angle congruence",
+        "SSS: Side-Side-Side congruence",
+        "RHS: Right angle-Hypotenuse-Side congruence",
+        "AB + BC > AC (Triangle inequality)"
+      ],
+      "topics": [
+        {
+          "id": "t_7_1",
+          "chapterId": "chap_7",
+          "title": "Congruence of Triangles",
+          "order": 1,
+          "summary": "Concept of congruent figures and CPCTC."
+        },
+        {
+          "id": "t_7_2",
+          "chapterId": "chap_7",
+          "title": "Congruence Criteria (SAS, ASA, AAS)",
+          "order": 2,
+          "summary": "Rigorous proofs and problem solving."
+        },
+        {
+          "id": "t_7_3",
+          "chapterId": "chap_7",
+          "title": "SSS and RHS Criteria",
+          "order": 3,
+          "summary": "Special right triangle and equilateral deductions."
+        },
+        {
+          "id": "t_7_4",
+          "chapterId": "chap_7",
+          "title": "Inequalities in a Triangle",
+          "order": 4,
+          "summary": "Relationships between sides and opposite angles."
+        }
+      ]
+    },
+    {
+      "id": "chap_8",
+      "number": 8,
+      "title": "Quadrilaterals",
+      "description": "Examine properties of parallelograms, rectangles, rhombuses, squares, and the foundational Mid-Point Theorem with converse.",
+      "curriculum": "BOTH",
+      "difficulty": "Hard",
+      "totalLessons": 6,
+      "totalQuestions": 25,
+      "iconName": "Square",
+      "learningObjectives": [
+        "Prove that a diagonal divides a parallelogram into two congruent triangles",
+        "Identify conditions for a quadrilateral to be a parallelogram",
+        "Apply the Mid-Point Theorem and its converse in geometrical proofs"
+      ],
+      "formulaSummary": [
+        "Sum of angles of quadrilateral = 360°",
+        "Opposite sides & angles of parallelogram are equal",
+        "Diagonals of parallelogram bisect each other",
+        "Mid-Point Theorem: Line segment joining mid-points is parallel to 3rd side & half of it"
+      ],
+      "topics": [
+        {
+          "id": "t_8_1",
+          "chapterId": "chap_8",
+          "title": "Properties of Parallelogram",
+          "order": 1,
+          "summary": "Theorems on opposite sides, angles, and diagonals."
+        },
+        {
+          "id": "t_8_2",
+          "chapterId": "chap_8",
+          "title": "Special Quadrilaterals",
+          "order": 2,
+          "summary": "Rectangle, Rhombus, Square, Trapezium."
+        },
+        {
+          "id": "t_8_3",
+          "chapterId": "chap_8",
+          "title": "The Mid-Point Theorem",
+          "order": 3,
+          "summary": "Proof and applications in geometric constructions and proofs."
+        }
+      ]
+    },
+    {
+      "id": "chap_9",
+      "number": 9,
+      "title": "Circles",
+      "description": "Chords, perpendicular from center to a chord, equal chords and distances, angle subtended by an arc at the center, and cyclic quadrilaterals.",
+      "curriculum": "BOTH",
+      "difficulty": "Hard",
+      "totalLessons": 7,
+      "totalQuestions": 28,
+      "iconName": "Circle",
+      "learningObjectives": [
+        "Prove perpendicular from center bisects the chord",
+        "Prove equal chords subtend equal angles at the center",
+        "State and prove angle subtended at center is double angle at circumference",
+        "Understand opposite angles of cyclic quadrilateral sum to 180°"
+      ],
+      "formulaSummary": [
+        "Angle at center = 2 × Angle at remaining part of circumference",
+        "Angle in a semicircle is a right angle (90°)",
+        "Angles in the same segment are equal",
+        "Opposite angles of cyclic quadrilateral: ∠A + ∠C = 180°"
+      ],
+      "topics": [
+        {
+          "id": "t_9_1",
+          "chapterId": "chap_9",
+          "title": "Chords and Center Properties",
+          "order": 1,
+          "summary": "Perpendicular from center, distance from center to chords."
+        },
+        {
+          "id": "t_9_2",
+          "chapterId": "chap_9",
+          "title": "Angle Subtended by an Arc",
+          "order": 2,
+          "summary": "Center angle vs circumference angle theorem and corollaries."
+        },
+        {
+          "id": "t_9_3",
+          "chapterId": "chap_9",
+          "title": "Cyclic Quadrilaterals",
+          "order": 3,
+          "summary": "Definition, supplementary opposite angles, and proofs."
+        }
+      ]
+    },
+    {
+      "id": "chap_10",
+      "number": 10,
+      "title": "Heron's Formula",
+      "description": "Calculate area of arbitrary triangles using side lengths, semi-perimeter s, and application to finding areas of quadrilaterals.",
+      "curriculum": "BOTH",
+      "difficulty": "Medium",
+      "totalLessons": 4,
+      "totalQuestions": 20,
+      "iconName": "Hash",
+      "learningObjectives": [
+        "Calculate semi-perimeter s = (a + b + c) / 2",
+        "Apply Area = √[s(s - a)(s - b)(s - c)]",
+        "Compute areas of triangles and irregular quadrilaterals"
+      ],
+      "formulaSummary": [
+        "s = (a + b + c) / 2",
+        "Area = √[s(s - a)(s - b)(s - c)]",
+        "Area of equilateral triangle = (√3 / 4) × a^2",
+        "Altitude h = 2 × Area / base"
+      ],
+      "topics": [
+        {
+          "id": "t_10_1",
+          "chapterId": "chap_10",
+          "title": "Heron's Formula Derivation & Use",
+          "order": 1,
+          "summary": "Finding triangle area when all three sides are known."
+        },
+        {
+          "id": "t_10_2",
+          "chapterId": "chap_10",
+          "title": "Applications to Quadrilaterals",
+          "order": 2,
+          "summary": "Partitioning quadrilaterals into triangles to compute total area."
+        }
+      ]
+    },
+    {
+      "id": "chap_11",
+      "number": 11,
+      "title": "Surface Areas and Volumes",
+      "description": "Formulas and calculations for 3D solids: cubes, cuboids, right circular cylinders, right circular cones, spheres, and hemispheres.",
+      "curriculum": "BOTH",
+      "difficulty": "Hard",
+      "totalLessons": 8,
+      "totalQuestions": 32,
+      "iconName": "Box",
+      "learningObjectives": [
+        "Distinguish curved surface area (CSA) from total surface area (TSA)",
+        "Calculate volume of cylinder, cone, sphere, and hemisphere",
+        "Solve practical word problems on painting, melting, and liquid capacities"
+      ],
+      "formulaSummary": [
+        "Cylinder: CSA = 2πrh, TSA = 2πr(r + h), Vol = πr^2h",
+        "Cone: CSA = πrl (where l = √(r^2 + h^2)), TSA = πr(l + r), Vol = (1/3)πr^2h",
+        "Sphere: Surface Area = 4πr^2, Vol = (4/3)πr^3",
+        "Hemisphere: CSA = 2πr^2, TSA = 3πr^2, Vol = (2/3)πr^3"
+      ],
+      "topics": [
+        {
+          "id": "t_11_1",
+          "chapterId": "chap_11",
+          "title": "Cuboid and Cube",
+          "order": 1,
+          "summary": "Surface area and volume of rectangular prisms."
+        },
+        {
+          "id": "t_11_2",
+          "chapterId": "chap_11",
+          "title": "Right Circular Cylinder",
+          "order": 2,
+          "summary": "Curved surface area, total surface area, and capacity."
+        },
+        {
+          "id": "t_11_3",
+          "chapterId": "chap_11",
+          "title": "Right Circular Cone",
+          "order": 3,
+          "summary": "Slant height, CSA, TSA, and volume."
+        },
+        {
+          "id": "t_11_4",
+          "chapterId": "chap_11",
+          "title": "Sphere and Hemisphere",
+          "order": 4,
+          "summary": "Surface areas and volume computations."
+        }
+      ]
+    },
+    {
+      "id": "chap_12",
+      "number": 12,
+      "title": "Statistics",
+      "description": "Data collection and organization, frequency distributions, graphical representation (bar graphs, histograms, frequency polygons), and central tendency measures.",
+      "curriculum": "BOTH",
+      "difficulty": "Medium",
+      "totalLessons": 5,
+      "totalQuestions": 22,
+      "iconName": "BarChart2",
+      "learningObjectives": [
+        "Construct grouped frequency distribution tables",
+        "Plot histograms with equal and varying class intervals",
+        "Compute Mean, Median, and Mode of ungrouped data"
+      ],
+      "formulaSummary": [
+        "Mean x̄ = (∑ f_i x_i) / (∑ f_i)",
+        "Median (odd n) = value of ((n + 1) / 2)th observation",
+        "Median (even n) = average of (n/2)th and (n/2 + 1)th observations",
+        "Mode = observation with highest frequency"
+      ],
+      "topics": [
+        {
+          "id": "t_12_1",
+          "chapterId": "chap_12",
+          "title": "Collection and Presentation of Data",
+          "order": 1,
+          "summary": "Raw data, grouped and ungrouped frequency tables."
+        },
+        {
+          "id": "t_12_2",
+          "chapterId": "chap_12",
+          "title": "Graphical Representation",
+          "order": 2,
+          "summary": "Bar charts, histograms, and frequency polygons."
+        },
+        {
+          "id": "t_12_3",
+          "chapterId": "chap_12",
+          "title": "Measures of Central Tendency",
+          "order": 3,
+          "summary": "Calculating Mean, Median, and Mode."
+        }
+      ]
+    },
+    {
+      "id": "chap_13",
+      "number": 13,
+      "title": "Probability",
+      "description": "Empirical (experimental) approach to probability, random trials, frequencies, favorable outcomes, and evaluating chance in everyday experiments.",
+      "curriculum": "BOTH",
+      "difficulty": "Easy",
+      "totalLessons": 4,
+      "totalQuestions": 18,
+      "iconName": "Percent",
+      "learningObjectives": [
+        "Understand trial, event, outcome, and sample frequency",
+        "Calculate P(E) = Number of trials where event occurred / Total trials",
+        "Recognize that 0 ≤ P(E) ≤ 1 and sum of all elementary probabilities is 1"
+      ],
+      "formulaSummary": [
+        "P(E) = Number of trials in which event happened / Total number of trials",
+        "0 ≤ P(E) ≤ 1",
+        "P(Sure event) = 1, P(Impossible event) = 0",
+        "P(E) + P(not E) = 1"
+      ],
+      "topics": [
+        {
+          "id": "t_13_1",
+          "chapterId": "chap_13",
+          "title": "Empirical Probability Approach",
+          "order": 1,
+          "summary": "Coin tosses, dice rolls, and frequency distribution experiments."
+        },
+        {
+          "id": "t_13_2",
+          "chapterId": "chap_13",
+          "title": "Calculating Probabilities",
+          "order": 2,
+          "summary": "Real-world survey and manufacturing quality testing applications."
+        }
+      ]
+    },
+    {
+      "id": "chap_14",
+      "number": 14,
+      "title": "Proofs in Mathematics (AP State Focus)",
+      "description": "Mathematical reasoning, deductive logic, constructing valid proofs, understanding counterexamples, and formal mathematical statements.",
+      "curriculum": "AP_STATE",
+      "difficulty": "Medium",
+      "totalLessons": 4,
+      "totalQuestions": 16,
+      "iconName": "FileCheck",
+      "learningObjectives": [
+        "Differentiate between conjecture, hypothesis, and theorem",
+        "Understand the power of a counterexample to disprove an assertion",
+        "Construct direct and indirect (contradiction) deductive proofs"
+      ],
+      "formulaSummary": [
+        "Direct Proof: A ⇒ B ⇒ C",
+        "Proof by Contradiction: Assume not-P, show contradiction",
+        "One counterexample refutes a universal statement"
+      ],
+      "topics": [
+        {
+          "id": "t_14_1",
+          "chapterId": "chap_14",
+          "title": "Statements and Conjectures",
+          "order": 1,
+          "summary": "Logical statements vs non-mathematical opinions."
+        },
+        {
+          "id": "t_14_2",
+          "chapterId": "chap_14",
+          "title": "Methods of Proof & Counterexamples",
+          "order": 2,
+          "summary": "Rigorous deduction in Euclidean and algebraic geometry."
+        }
+      ]
+    }
+  ],
+  "studyMaterials": [
+    {
+      "id": "mat_1",
+      "chapterId": "chap_1",
+      "title": "Number Systems Complete Notes",
+      "description": "Comprehensive chapter notes detailing real numbers, irrationality proofs, successive magnification, and rationalization techniques.",
+      "type": "Chapter Notes",
+      "difficulty": "Easy",
+      "date": "2026-09-01",
+      "readTime": "15 min read",
+      "keyFormulas": [
+        "a^p · a^q = a^(p+q)",
+        "(a^p)^q = a^(pq)",
+        "1 / (√a + √b) = (√a - √b) / (a - b)"
+      ],
+      "contentMarkdown": "# Number Systems - Complete Revision Notes\n\n## 1. Classification of Real Numbers\n- **Natural Numbers (N):** 1, 2, 3, 4, ...\n- **Whole Numbers (W):** 0, 1, 2, 3, ...\n- **Integers (Z):** ..., -3, -2, -1, 0, 1, 2, 3, ...\n- **Rational Numbers (Q):** Any number that can be expressed in the form $p/q$, where $p$ and $q$ are integers and $q \\neq 0$.\n- **Irrational Numbers:** Numbers that cannot be expressed as $p/q$. Their decimal expansion is non-terminating and non-recurring (e.g., $\\sqrt{2}, \\sqrt{3}, \\pi$).\n\n## 2. Decimal Expansions\n1. **Terminating:** e.g., $1/4 = 0.25$\n2. **Non-terminating Recurring:** e.g., $1/3 = 0.3333... = 0.\\bar{3}$ (Always Rational)\n3. **Non-terminating Non-recurring:** e.g., $0.1010010001...$ or $\\sqrt{2} = 1.41421...$ (Always Irrational)\n\n## 3. Rationalization of the Denominator\nWhen a denominator contains a radical term like $\\sqrt{a} + \\sqrt{b}$, multiply numerator and denominator by its conjugate $(\\sqrt{a} - \\sqrt{b})$:\n$$\\frac{1}{\\sqrt{a} + \\sqrt{b}} = \\frac{\\sqrt{a} - \\sqrt{b}}{(\\sqrt{a} + \\sqrt{b})(\\sqrt{a} - \\sqrt{b})} = \\frac{\\sqrt{a} - \\sqrt{b}}{a - b}$$\n\n## 4. Laws of Exponents for Real Numbers (a > 0, b > 0)\n1. $a^m \\times a^n = a^{m+n}$\n2. $(a^m)^n = a^{mn}$\n3. $\\frac{a^m}{a^n} = a^{m-n}$\n4. $a^m \\times b^m = (ab)^m$\n5. $a^0 = 1$\n6. $a^{-n} = \\frac{1}{a^n}$"
+    },
+    {
+      "id": "mat_2",
+      "chapterId": "chap_2",
+      "title": "Polynomials Formula Sheet & Quick Identities",
+      "description": "Quick reference cheat sheet containing all 8 standard Class 9 algebraic identities and Factor theorem applications.",
+      "type": "Formula Sheet",
+      "difficulty": "Medium",
+      "date": "2026-09-05",
+      "readTime": "8 min read",
+      "keyFormulas": [
+        "(x + y + z)^2 = x^2 + y^2 + z^2 + 2xy + 2yz + 2zx",
+        "(x + y)^3 = x^3 + y^3 + 3xy(x + y)",
+        "x^3 + y^3 + z^3 - 3xyz = (x + y + z)(x^2 + y^2 + z^2 - xy - yz - zx)"
+      ],
+      "contentMarkdown": "# Polynomials - Essential Formula Sheet\n\n## Key Algebraic Identities\n1. $(x + y)^2 = x^2 + 2xy + y^2$\n2. $(x - y)^2 = x^2 - 2xy + y^2$\n3. $x^2 - y^2 = (x + y)(x - y)$\n4. $(x + a)(x + b) = x^2 + (a + b)x + ab$\n5. $(x + y + z)^2 = x^2 + y^2 + z^2 + 2xy + 2yz + 2zx$\n6. $(x + y)^3 = x^3 + y^3 + 3xy(x + y) = x^3 + 3x^2y + 3xy^2 + y^3$\n7. $(x - y)^3 = x^3 - y^3 - 3xy(x - y) = x^3 - 3x^2y + 3xy^2 - y^3$\n8. $x^3 + y^3 + z^3 - 3xyz = (x + y + z)(x^2 + y^2 + z^2 - xy - yz - zx)$\n\n*Special Case:*\nIf $x + y + z = 0$, then:\n$$x^3 + y^3 + z^3 = 3xyz$$\n\n## Remainder Theorem\nIf a polynomial $p(x)$ is divided by $(x - a)$, the remainder is $p(a)$.\n\n## Factor Theorem\n$(x - a)$ is a factor of $p(x)$ if and only if $p(a) = 0$."
+    },
+    {
+      "id": "mat_3",
+      "chapterId": "chap_7",
+      "title": "Triangles Revision Notes & Congruence Rules",
+      "description": "Detailed criteria for congruence (SAS, ASA, AAS, SSS, RHS), theorems on isosceles triangles, and inequalities.",
+      "type": "Revision Notes",
+      "difficulty": "Hard",
+      "date": "2026-09-12",
+      "readTime": "12 min read",
+      "keyFormulas": [
+        "SAS Criterion",
+        "ASA Criterion",
+        "SSS Criterion",
+        "RHS Criterion"
+      ],
+      "contentMarkdown": "# Triangles - Congruence & Properties Revision\n\n## 1. Congruence Criteria\nTwo triangles are congruent if their corresponding sides and angles are equal.\n- **SAS:** Two sides and the included angle.\n- **ASA:** Two angles and the included side.\n- **AAS:** Two angles and any non-included side.\n- **SSS:** All three corresponding sides.\n- **RHS:** Right angle, Hypotenuse, and one corresponding Side.\n\n## 2. Key Theorems\n- **Theorem 7.2:** Angles opposite to equal sides of an isosceles triangle are equal.\n- **Theorem 7.3:** The sides opposite to equal angles of a triangle are equal.\n\n## 3. Triangle Inequalities\n- In any triangle, the side opposite to the greater angle is longer.\n- The sum of any two sides of a triangle is strictly greater than the third side:\n$$AB + BC > AC$$"
+    },
+    {
+      "id": "mat_4",
+      "chapterId": "chap_9",
+      "title": "Circles Formula Sheet & Important Theorems",
+      "description": "All Class 9 circle theorems summarized with key diagrammatic rules and cyclic quadrilateral properties.",
+      "type": "Formula Sheet",
+      "difficulty": "Hard",
+      "date": "2026-09-18",
+      "readTime": "10 min read",
+      "keyFormulas": [
+        "Angle at center = 2 × Angle at circumference",
+        "Angle in semicircle = 90°",
+        "Opposite angles of cyclic quadrilateral sum to 180°"
+      ],
+      "contentMarkdown": "# Circles - Comprehensive Theorem Cheat Sheet\n\n## 1. Chord & Center Theorems\n- The perpendicular from the center of a circle to a chord bisects the chord.\n- Equal chords of a circle subtend equal angles at the center.\n- Equal chords are equidistant from the center.\n\n## 2. Angle Subtended by Arcs\n- **Central Angle Theorem:** The angle subtended by an arc at the center is double the angle subtended by it at any point on the remaining part of the circle:\n$$\\angle AOB = 2 \\angle APB$$\n- Angles in the same segment of a circle are equal.\n- An angle in a semicircle is a right angle ($90^\\circ$).\n\n## 3. Cyclic Quadrilaterals\n- A quadrilateral whose all 4 vertices lie on a circle is called a cyclic quadrilateral.\n- The sum of either pair of opposite angles of a cyclic quadrilateral is $180^\\circ$:\n$$\\angle A + \\angle C = 180^\\circ \\quad \\text{and} \\quad \\angle B + \\angle D = 180^\\circ$$\n- If the exterior angle of a cyclic quadrilateral is formed, it is equal to the interior opposite angle."
+    },
+    {
+      "id": "mat_5",
+      "chapterId": "chap_11",
+      "title": "Surface Areas and Volumes Quick Revision",
+      "description": "Consolidated formulas for Cuboid, Cylinder, Cone, Sphere, and Hemisphere with unit conversion tables.",
+      "type": "Revision Notes",
+      "difficulty": "Hard",
+      "date": "2026-09-22",
+      "readTime": "14 min read",
+      "keyFormulas": [
+        "Cylinder: CSA = 2πrh, Vol = πr^2h",
+        "Cone: CSA = πrl, Vol = (1/3)πr^2h",
+        "Sphere: Area = 4πr^2, Vol = (4/3)πr^3"
+      ],
+      "contentMarkdown": "# Surface Areas and Volumes - Quick Reference Guide\n\n## Summary Table\n\n| Solid | Curved Surface Area (CSA) | Total Surface Area (TSA) | Volume |\n| :--- | :--- | :--- | :--- |\n| **Cube** (edge $a$) | $4a^2$ | $6a^2$ | $a^3$ |\n| **Cuboid** ($l, b, h$) | $2h(l + b)$ | $2(lb + bh + hl)$ | $l \\times b \\times h$ |\n| **Cylinder** ($r, h$) | $2\\pi r h$ | $2\\pi r(r + h)$ | $\\pi r^2 h$ |\n| **Cone** ($r, h, l$) | $\\pi r l$ | $\\pi r(r + l)$ | $\\frac{1}{3}\\pi r^2 h$ |\n| **Sphere** ($r$) | $4\\pi r^2$ | $4\\pi r^2$ | $\\frac{4}{3}\\pi r^3$ |\n| **Hemisphere** ($r$) | $2\\pi r^2$ | $3\\pi r^2$ | $\\frac{2}{3}\\pi r^3$ |\n\n*Note for Cone:* Slant height $l = \\sqrt{r^2 + h^2}$.\n*Capacity Conversions:* $1\\text{ m}^3 = 1000\\text{ Litres}$, $1\\text{ Litre} = 1000\\text{ cm}^3$."
+    },
+    {
+      "id": "mat_6",
+      "chapterId": "chap_12",
+      "title": "Statistics Important Questions & Solved Examples",
+      "description": "High-yield exam questions covering mean, median, frequency polygons, and varying width histograms.",
+      "type": "Important Questions",
+      "difficulty": "Medium",
+      "date": "2026-09-25",
+      "readTime": "10 min read",
+      "keyFormulas": [
+        "Mean = ∑f_i x_i / ∑f_i",
+        "Median formula for odd/even n"
+      ],
+      "contentMarkdown": "# Statistics - Important Exam Practice Questions\n\n## Solved Example 1: Finding the Mean\nThe heights (in cm) of 9 students in Class 9 are:\n$144, 145, 147, 148, 149, 150, 152, 155, 160$.\n$$\\text{Mean} = \\frac{\\sum x_i}{n} = \\frac{1350}{9} = 150\\text{ cm}$$\n\n## Solved Example 2: Finding Median with Even Observations\nObservations: $12, 14, 15, 18, 20, 22, 25, 28$ ($n = 8$, even)\n- Term 4: 18\n- Term 5: 20\n$$\\text{Median} = \\frac{18 + 20}{2} = 19$$"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q_1_1",
+      "chapterId": "chap_1",
+      "curriculum": "BOTH",
+      "difficulty": "Easy",
+      "type": "MCQ",
+      "questionText": "Which of the following numbers is an irrational number?",
+      "options": [
+        {
+          "id": "opt_1",
+          "label": "A",
+          "text": "√4"
+        },
+        {
+          "id": "opt_2",
+          "label": "B",
+          "text": "√9"
+        },
+        {
+          "id": "opt_3",
+          "label": "C",
+          "text": "√7"
+        },
+        {
+          "id": "opt_4",
+          "label": "D",
+          "text": "0.25"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "√4 = 2 (rational), √9 = 3 (rational), 0.25 = 1/4 (rational). √7 cannot be expressed as a ratio of two integers p/q, hence it is irrational.",
+      "hints": [
+        "Check if the square root evaluates to a whole integer.",
+        "Non-perfect squares under square roots are irrational."
+      ]
+    },
+    {
+      "id": "q_1_2",
+      "chapterId": "chap_1",
+      "curriculum": "BOTH",
+      "difficulty": "Medium",
+      "type": "Numerical",
+      "questionText": "Evaluate: (64)^(1/2) × (27)^(1/3). Enter the final integer value.",
+      "correctAnswer": "24",
+      "explanation": "(64)^(1/2) = √(64) = 8. (27)^(1/3) = ∛(27) = 3. Therefore, 8 × 3 = 24.",
+      "hints": [
+        "64 = 8^2, so (8^2)^(1/2) = 8.",
+        "27 = 3^3, so (3^3)^(1/3) = 3."
+      ],
+      "formulaUsed": "(a^m)^n = a^(m×n)"
+    },
+    {
+      "id": "q_1_3",
+      "chapterId": "chap_1",
+      "curriculum": "BOTH",
+      "difficulty": "Medium",
+      "type": "True/False",
+      "questionText": "Every integer is a rational number.",
+      "options": [
+        {
+          "id": "opt_t",
+          "label": "A",
+          "text": "True"
+        },
+        {
+          "id": "opt_f",
+          "label": "B",
+          "text": "False"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "True. Any integer \"m\" can be written as m/1, which matches the definition p/q where p, q are integers and q ≠ 0.",
+      "hints": [
+        "Can you express an integer as a fraction over 1?"
+      ]
+    },
+    {
+      "id": "q_1_4",
+      "chapterId": "chap_1",
+      "curriculum": "BOTH",
+      "difficulty": "Hard",
+      "type": "MCQ",
+      "questionText": "Find the value of (√5 + √2)^2 after expanding.",
+      "options": [
+        {
+          "id": "opt_a",
+          "label": "A",
+          "text": "7"
+        },
+        {
+          "id": "opt_b",
+          "label": "B",
+          "text": "7 + 2√10"
+        },
+        {
+          "id": "opt_c",
+          "label": "C",
+          "text": "10 + 2√5"
+        },
+        {
+          "id": "opt_d",
+          "label": "D",
+          "text": "3 + 2√10"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Using identity (a + b)^2 = a^2 + 2ab + b^2: (√5)^2 + 2(√5)(√2) + (√2)^2 = 5 + 2√10 + 2 = 7 + 2√10.",
+      "hints": [
+        "Apply algebraic identity (a + b)^2 = a^2 + 2ab + b^2.",
+        "√5 × √2 = √(10)."
+      ]
+    },
+    {
+      "id": "q_2_1",
+      "chapterId": "chap_2",
+      "curriculum": "BOTH",
+      "difficulty": "Easy",
+      "type": "MCQ",
+      "questionText": "What is the degree of the polynomial p(x) = 5x^4 - 3x^2 + 7x + 9?",
+      "options": [
+        {
+          "id": "opt_a",
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "id": "opt_b",
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "id": "opt_c",
+          "label": "C",
+          "text": "4"
+        },
+        {
+          "id": "opt_d",
+          "label": "D",
+          "text": "9"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The degree of a polynomial is the highest exponent of the variable in the polynomial. Here the highest power of x is 4.",
+      "hints": [
+        "Look for the term with the highest power of x."
+      ]
+    },
+    {
+      "id": "q_2_2",
+      "chapterId": "chap_2",
+      "curriculum": "BOTH",
+      "difficulty": "Medium",
+      "type": "Numerical",
+      "questionText": "If p(x) = 2x^2 - 3x + 5, what is the value of p(3)?",
+      "correctAnswer": "14",
+      "explanation": "Substitute x = 3: p(3) = 2(3)^2 - 3(3) + 5 = 2(9) - 9 + 5 = 18 - 9 + 5 = 14.",
+      "hints": [
+        "Replace every x with 3 and perform operations step-by-step."
+      ]
+    },
+    {
+      "id": "q_2_3",
+      "chapterId": "chap_2",
+      "curriculum": "BOTH",
+      "difficulty": "Medium",
+      "type": "Fill in the blank",
+      "questionText": "According to the Factor Theorem, (x - a) is a factor of p(x) if and only if p(a) = _______. (Enter the number)",
+      "correctAnswer": "0",
+      "explanation": "By the Factor Theorem, (x - a) is a factor of p(x) if and only if p(a) = 0.",
+      "hints": [
+        "Think of the remainder when something divides completely."
+      ]
+    },
+    {
+      "id": "q_3_1",
+      "chapterId": "chap_3",
+      "curriculum": "BOTH",
+      "difficulty": "Easy",
+      "type": "MCQ",
+      "questionText": "In which quadrant does the point (-4, 5) lie?",
+      "options": [
+        {
+          "id": "opt_a",
+          "label": "A",
+          "text": "Quadrant I"
+        },
+        {
+          "id": "opt_b",
+          "label": "B",
+          "text": "Quadrant II"
+        },
+        {
+          "id": "opt_c",
+          "label": "C",
+          "text": "Quadrant III"
+        },
+        {
+          "id": "opt_d",
+          "label": "D",
+          "text": "Quadrant IV"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "In Quadrant II, the x-coordinate is negative and the y-coordinate is positive (-, +). Hence (-4, 5) lies in Quadrant II.",
+      "hints": [
+        "Quadrant I is (+,+), Quadrant II is (-,+), Quadrant III is (-,-), Quadrant IV is (+,-)."
+      ]
+    },
+    {
+      "id": "q_4_1",
+      "chapterId": "chap_4",
+      "curriculum": "BOTH",
+      "difficulty": "Medium",
+      "type": "Numerical",
+      "questionText": "If (2, 0) is a solution of 2x + 3y = k, find the value of k.",
+      "correctAnswer": "4",
+      "explanation": "Substitute x = 2 and y = 0: 2(2) + 3(0) = k ⇒ 4 + 0 = k ⇒ k = 4.",
+      "hints": [
+        "Substitute x = 2 and y = 0 into the equation."
+      ]
+    },
+    {
+      "id": "q_6_1",
+      "chapterId": "chap_6",
+      "curriculum": "BOTH",
+      "difficulty": "Medium",
+      "type": "Numerical",
+      "questionText": "Two angles forming a linear pair are in the ratio 2 : 3. Find the measure of the smaller angle in degrees.",
+      "correctAnswer": "72",
+      "explanation": "Let the angles be 2x and 3x. Sum of linear pair = 180°. 2x + 3x = 180° ⇒ 5x = 180° ⇒ x = 36°. Smaller angle = 2 × 36° = 72°.",
+      "hints": [
+        "Sum of angles in a linear pair is 180°. Set 2x + 3x = 180°."
+      ]
+    },
+    {
+      "id": "q_7_1",
+      "chapterId": "chap_7",
+      "curriculum": "BOTH",
+      "difficulty": "Medium",
+      "type": "MCQ",
+      "questionText": "Which of the following is NOT a criterion for congruence of triangles?",
+      "options": [
+        {
+          "id": "opt_a",
+          "label": "A",
+          "text": "SAS"
+        },
+        {
+          "id": "opt_b",
+          "label": "B",
+          "text": "AAA"
+        },
+        {
+          "id": "opt_c",
+          "label": "C",
+          "text": "SSS"
+        },
+        {
+          "id": "opt_d",
+          "label": "D",
+          "text": "RHS"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "AAA (Angle-Angle-Angle) ensures similarity, but not congruence, because triangles with same angles can have different sizes.",
+      "hints": [
+        "Can triangles have identical angles but different scales?"
+      ]
+    },
+    {
+      "id": "q_9_1",
+      "chapterId": "chap_9",
+      "curriculum": "BOTH",
+      "difficulty": "Hard",
+      "type": "Numerical",
+      "questionText": "In a circle with center O, the angle subtended by an arc at the center is 110°. What is the angle subtended by it at the circumference in degrees?",
+      "correctAnswer": "55",
+      "explanation": "By the Central Angle Theorem, the angle subtended at the center is double the angle subtended at any point on the circumference: 110° / 2 = 55°.",
+      "hints": [
+        "Angle at circumference = (1/2) × Angle at center."
+      ]
+    },
+    {
+      "id": "q_9_2",
+      "chapterId": "chap_9",
+      "curriculum": "BOTH",
+      "difficulty": "Hard",
+      "type": "MCQ",
+      "questionText": "In a cyclic quadrilateral ABCD, if ∠A = 70°, what is the measure of the opposite angle ∠C?",
+      "options": [
+        {
+          "id": "opt_a",
+          "label": "A",
+          "text": "70°"
+        },
+        {
+          "id": "opt_b",
+          "label": "B",
+          "text": "90°"
+        },
+        {
+          "id": "opt_c",
+          "label": "C",
+          "text": "110°"
+        },
+        {
+          "id": "opt_d",
+          "label": "D",
+          "text": "140°"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The opposite angles of a cyclic quadrilateral are supplementary (sum to 180°). ∠C = 180° - 70° = 110°.",
+      "hints": [
+        "Sum of opposite angles in a cyclic quadrilateral is 180°."
+      ]
+    },
+    {
+      "id": "q_10_1",
+      "chapterId": "chap_10",
+      "curriculum": "BOTH",
+      "difficulty": "Medium",
+      "type": "Numerical",
+      "questionText": "The sides of a triangle are 6 cm, 8 cm, and 10 cm. Using Heron’s formula, find its area in sq cm.",
+      "correctAnswer": "24",
+      "explanation": "s = (6 + 8 + 10)/2 = 12 cm. Area = √[12(12 - 6)(12 - 8)(12 - 10)] = √[12 × 6 × 4 × 2] = √[576] = 24 sq cm.",
+      "hints": [
+        "Calculate s = (a+b+c)/2 first.",
+        "Apply √[s(s-a)(s-b)(s-c)]."
+      ]
+    },
+    {
+      "id": "q_11_1",
+      "chapterId": "chap_11",
+      "curriculum": "BOTH",
+      "difficulty": "Hard",
+      "type": "Numerical",
+      "questionText": "The radius of a sphere is 3 cm. Find its surface area in terms of π (if Area = k × π, enter k).",
+      "correctAnswer": "36",
+      "explanation": "Surface area of sphere = 4πr^2 = 4 × π × (3)^2 = 4 × 9 × π = 36π. Hence k = 36.",
+      "hints": [
+        "Formula for surface area of sphere is 4πr^2."
+      ]
+    },
+    {
+      "id": "q_13_1",
+      "chapterId": "chap_13",
+      "curriculum": "BOTH",
+      "difficulty": "Easy",
+      "type": "MCQ",
+      "questionText": "A coin is tossed 100 times and head is obtained 58 times. What is the empirical probability of getting a tail?",
+      "options": [
+        {
+          "id": "opt_a",
+          "label": "A",
+          "text": "0.58"
+        },
+        {
+          "id": "opt_b",
+          "label": "B",
+          "text": "0.42"
+        },
+        {
+          "id": "opt_c",
+          "label": "C",
+          "text": "0.50"
+        },
+        {
+          "id": "opt_d",
+          "label": "D",
+          "text": "0.24"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Number of tails = 100 - 58 = 42. P(Tail) = 42 / 100 = 0.42.",
+      "hints": [
+        "Number of tails = Total tosses - Heads.",
+        "Probability = Tails / Total."
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "id": "test_1",
+      "title": "Chapter 1: Number Systems Mastery Test",
+      "chapterId": "chap_1",
+      "chapterName": "Number Systems",
+      "type": "Chapter Test",
+      "curriculum": "BOTH",
+      "durationMinutes": 20,
+      "totalMarks": 20,
+      "questionCount": 4,
+      "instructions": [
+        "All questions are compulsory.",
+        "Calculators are not permitted; rough work space is provided.",
+        "Each question carries 5 marks with step-by-step scoring.",
+        "Timer will automatically submit the test when it reaches 00:00."
+      ],
+      "questions": [
+        {
+          "id": "q_1_1",
+          "chapterId": "chap_1",
+          "curriculum": "BOTH",
+          "difficulty": "Easy",
+          "type": "MCQ",
+          "questionText": "Which of the following numbers is an irrational number?",
+          "options": [
+            {
+              "id": "opt_1",
+              "label": "A",
+              "text": "√4"
+            },
+            {
+              "id": "opt_2",
+              "label": "B",
+              "text": "√9"
+            },
+            {
+              "id": "opt_3",
+              "label": "C",
+              "text": "√7"
+            },
+            {
+              "id": "opt_4",
+              "label": "D",
+              "text": "0.25"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "√4 = 2 (rational), √9 = 3 (rational), 0.25 = 1/4 (rational). √7 cannot be expressed as a ratio of two integers p/q, hence it is irrational.",
+          "hints": [
+            "Check if the square root evaluates to a whole integer.",
+            "Non-perfect squares under square roots are irrational."
+          ]
+        },
+        {
+          "id": "q_1_2",
+          "chapterId": "chap_1",
+          "curriculum": "BOTH",
+          "difficulty": "Medium",
+          "type": "Numerical",
+          "questionText": "Evaluate: (64)^(1/2) × (27)^(1/3). Enter the final integer value.",
+          "correctAnswer": "24",
+          "explanation": "(64)^(1/2) = √(64) = 8. (27)^(1/3) = ∛(27) = 3. Therefore, 8 × 3 = 24.",
+          "hints": [
+            "64 = 8^2, so (8^2)^(1/2) = 8.",
+            "27 = 3^3, so (3^3)^(1/3) = 3."
+          ],
+          "formulaUsed": "(a^m)^n = a^(m×n)"
+        },
+        {
+          "id": "q_1_3",
+          "chapterId": "chap_1",
+          "curriculum": "BOTH",
+          "difficulty": "Medium",
+          "type": "True/False",
+          "questionText": "Every integer is a rational number.",
+          "options": [
+            {
+              "id": "opt_t",
+              "label": "A",
+              "text": "True"
+            },
+            {
+              "id": "opt_f",
+              "label": "B",
+              "text": "False"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "True. Any integer \"m\" can be written as m/1, which matches the definition p/q where p, q are integers and q ≠ 0.",
+          "hints": [
+            "Can you express an integer as a fraction over 1?"
+          ]
+        },
+        {
+          "id": "q_1_4",
+          "chapterId": "chap_1",
+          "curriculum": "BOTH",
+          "difficulty": "Hard",
+          "type": "MCQ",
+          "questionText": "Find the value of (√5 + √2)^2 after expanding.",
+          "options": [
+            {
+              "id": "opt_a",
+              "label": "A",
+              "text": "7"
+            },
+            {
+              "id": "opt_b",
+              "label": "B",
+              "text": "7 + 2√10"
+            },
+            {
+              "id": "opt_c",
+              "label": "C",
+              "text": "10 + 2√5"
+            },
+            {
+              "id": "opt_d",
+              "label": "D",
+              "text": "3 + 2√10"
+            }
+          ],
+          "correctAnswer": "B",
+          "explanation": "Using identity (a + b)^2 = a^2 + 2ab + b^2: (√5)^2 + 2(√5)(√2) + (√2)^2 = 5 + 2√10 + 2 = 7 + 2√10.",
+          "hints": [
+            "Apply algebraic identity (a + b)^2 = a^2 + 2ab + b^2.",
+            "√5 × √2 = √(10)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "test_2",
+      "title": "Chapter 2: Polynomials & Identities Challenge",
+      "chapterId": "chap_2",
+      "chapterName": "Polynomials",
+      "type": "Chapter Test",
+      "curriculum": "BOTH",
+      "durationMinutes": 20,
+      "totalMarks": 15,
+      "questionCount": 3,
+      "instructions": [
+        "Read questions carefully before answering.",
+        "Verify algebra expansions before submitting.",
+        "You can mark questions for review and return to them."
+      ],
+      "questions": [
+        {
+          "id": "q_2_1",
+          "chapterId": "chap_2",
+          "curriculum": "BOTH",
+          "difficulty": "Easy",
+          "type": "MCQ",
+          "questionText": "What is the degree of the polynomial p(x) = 5x^4 - 3x^2 + 7x + 9?",
+          "options": [
+            {
+              "id": "opt_a",
+              "label": "A",
+              "text": "1"
+            },
+            {
+              "id": "opt_b",
+              "label": "B",
+              "text": "2"
+            },
+            {
+              "id": "opt_c",
+              "label": "C",
+              "text": "4"
+            },
+            {
+              "id": "opt_d",
+              "label": "D",
+              "text": "9"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "The degree of a polynomial is the highest exponent of the variable in the polynomial. Here the highest power of x is 4.",
+          "hints": [
+            "Look for the term with the highest power of x."
+          ]
+        },
+        {
+          "id": "q_2_2",
+          "chapterId": "chap_2",
+          "curriculum": "BOTH",
+          "difficulty": "Medium",
+          "type": "Numerical",
+          "questionText": "If p(x) = 2x^2 - 3x + 5, what is the value of p(3)?",
+          "correctAnswer": "14",
+          "explanation": "Substitute x = 3: p(3) = 2(3)^2 - 3(3) + 5 = 2(9) - 9 + 5 = 18 - 9 + 5 = 14.",
+          "hints": [
+            "Replace every x with 3 and perform operations step-by-step."
+          ]
+        },
+        {
+          "id": "q_2_3",
+          "chapterId": "chap_2",
+          "curriculum": "BOTH",
+          "difficulty": "Medium",
+          "type": "Fill in the blank",
+          "questionText": "According to the Factor Theorem, (x - a) is a factor of p(x) if and only if p(a) = _______. (Enter the number)",
+          "correctAnswer": "0",
+          "explanation": "By the Factor Theorem, (x - a) is a factor of p(x) if and only if p(a) = 0.",
+          "hints": [
+            "Think of the remainder when something divides completely."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "test_3",
+      "title": "Chapter 9: Circles Geometry Assessment",
+      "chapterId": "chap_9",
+      "chapterName": "Circles",
+      "type": "Chapter Test",
+      "curriculum": "BOTH",
+      "durationMinutes": 25,
+      "totalMarks": 20,
+      "questionCount": 2,
+      "instructions": [
+        "Focus on circle angle theorems and cyclic properties.",
+        "Keep track of remaining time."
+      ],
+      "questions": [
+        {
+          "id": "q_7_1",
+          "chapterId": "chap_7",
+          "curriculum": "BOTH",
+          "difficulty": "Medium",
+          "type": "MCQ",
+          "questionText": "Which of the following is NOT a criterion for congruence of triangles?",
+          "options": [
+            {
+              "id": "opt_a",
+              "label": "A",
+              "text": "SAS"
+            },
+            {
+              "id": "opt_b",
+              "label": "B",
+              "text": "AAA"
+            },
+            {
+              "id": "opt_c",
+              "label": "C",
+              "text": "SSS"
+            },
+            {
+              "id": "opt_d",
+              "label": "D",
+              "text": "RHS"
+            }
+          ],
+          "correctAnswer": "B",
+          "explanation": "AAA (Angle-Angle-Angle) ensures similarity, but not congruence, because triangles with same angles can have different sizes.",
+          "hints": [
+            "Can triangles have identical angles but different scales?"
+          ]
+        },
+        {
+          "id": "q_9_1",
+          "chapterId": "chap_9",
+          "curriculum": "BOTH",
+          "difficulty": "Hard",
+          "type": "Numerical",
+          "questionText": "In a circle with center O, the angle subtended by an arc at the center is 110°. What is the angle subtended by it at the circumference in degrees?",
+          "correctAnswer": "55",
+          "explanation": "By the Central Angle Theorem, the angle subtended at the center is double the angle subtended at any point on the circumference: 110° / 2 = 55°.",
+          "hints": [
+            "Angle at circumference = (1/2) × Angle at center."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "test_full_1",
+      "title": "Mid-Term Comprehensive Class 9 Assessment",
+      "type": "Unit Test",
+      "curriculum": "BOTH",
+      "durationMinutes": 45,
+      "totalMarks": 50,
+      "questionCount": 8,
+      "instructions": [
+        "Covers Chapters 1 through 9.",
+        "Mark for review allows reviewing flagged questions anytime before submission.",
+        "Ensure stable network connection."
+      ],
+      "questions": [
+        {
+          "id": "q_1_1",
+          "chapterId": "chap_1",
+          "curriculum": "BOTH",
+          "difficulty": "Easy",
+          "type": "MCQ",
+          "questionText": "Which of the following numbers is an irrational number?",
+          "options": [
+            {
+              "id": "opt_1",
+              "label": "A",
+              "text": "√4"
+            },
+            {
+              "id": "opt_2",
+              "label": "B",
+              "text": "√9"
+            },
+            {
+              "id": "opt_3",
+              "label": "C",
+              "text": "√7"
+            },
+            {
+              "id": "opt_4",
+              "label": "D",
+              "text": "0.25"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "√4 = 2 (rational), √9 = 3 (rational), 0.25 = 1/4 (rational). √7 cannot be expressed as a ratio of two integers p/q, hence it is irrational.",
+          "hints": [
+            "Check if the square root evaluates to a whole integer.",
+            "Non-perfect squares under square roots are irrational."
+          ]
+        },
+        {
+          "id": "q_1_2",
+          "chapterId": "chap_1",
+          "curriculum": "BOTH",
+          "difficulty": "Medium",
+          "type": "Numerical",
+          "questionText": "Evaluate: (64)^(1/2) × (27)^(1/3). Enter the final integer value.",
+          "correctAnswer": "24",
+          "explanation": "(64)^(1/2) = √(64) = 8. (27)^(1/3) = ∛(27) = 3. Therefore, 8 × 3 = 24.",
+          "hints": [
+            "64 = 8^2, so (8^2)^(1/2) = 8.",
+            "27 = 3^3, so (3^3)^(1/3) = 3."
+          ],
+          "formulaUsed": "(a^m)^n = a^(m×n)"
+        },
+        {
+          "id": "q_2_1",
+          "chapterId": "chap_2",
+          "curriculum": "BOTH",
+          "difficulty": "Easy",
+          "type": "MCQ",
+          "questionText": "What is the degree of the polynomial p(x) = 5x^4 - 3x^2 + 7x + 9?",
+          "options": [
+            {
+              "id": "opt_a",
+              "label": "A",
+              "text": "1"
+            },
+            {
+              "id": "opt_b",
+              "label": "B",
+              "text": "2"
+            },
+            {
+              "id": "opt_c",
+              "label": "C",
+              "text": "4"
+            },
+            {
+              "id": "opt_d",
+              "label": "D",
+              "text": "9"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "The degree of a polynomial is the highest exponent of the variable in the polynomial. Here the highest power of x is 4.",
+          "hints": [
+            "Look for the term with the highest power of x."
+          ]
+        },
+        {
+          "id": "q_2_2",
+          "chapterId": "chap_2",
+          "curriculum": "BOTH",
+          "difficulty": "Medium",
+          "type": "Numerical",
+          "questionText": "If p(x) = 2x^2 - 3x + 5, what is the value of p(3)?",
+          "correctAnswer": "14",
+          "explanation": "Substitute x = 3: p(3) = 2(3)^2 - 3(3) + 5 = 2(9) - 9 + 5 = 18 - 9 + 5 = 14.",
+          "hints": [
+            "Replace every x with 3 and perform operations step-by-step."
+          ]
+        },
+        {
+          "id": "q_3_1",
+          "chapterId": "chap_3",
+          "curriculum": "BOTH",
+          "difficulty": "Easy",
+          "type": "MCQ",
+          "questionText": "In which quadrant does the point (-4, 5) lie?",
+          "options": [
+            {
+              "id": "opt_a",
+              "label": "A",
+              "text": "Quadrant I"
+            },
+            {
+              "id": "opt_b",
+              "label": "B",
+              "text": "Quadrant II"
+            },
+            {
+              "id": "opt_c",
+              "label": "C",
+              "text": "Quadrant III"
+            },
+            {
+              "id": "opt_d",
+              "label": "D",
+              "text": "Quadrant IV"
+            }
+          ],
+          "correctAnswer": "B",
+          "explanation": "In Quadrant II, the x-coordinate is negative and the y-coordinate is positive (-, +). Hence (-4, 5) lies in Quadrant II.",
+          "hints": [
+            "Quadrant I is (+,+), Quadrant II is (-,+), Quadrant III is (-,-), Quadrant IV is (+,-)."
+          ]
+        },
+        {
+          "id": "q_4_1",
+          "chapterId": "chap_4",
+          "curriculum": "BOTH",
+          "difficulty": "Medium",
+          "type": "Numerical",
+          "questionText": "If (2, 0) is a solution of 2x + 3y = k, find the value of k.",
+          "correctAnswer": "4",
+          "explanation": "Substitute x = 2 and y = 0: 2(2) + 3(0) = k ⇒ 4 + 0 = k ⇒ k = 4.",
+          "hints": [
+            "Substitute x = 2 and y = 0 into the equation."
+          ]
+        },
+        {
+          "id": "q_6_1",
+          "chapterId": "chap_6",
+          "curriculum": "BOTH",
+          "difficulty": "Medium",
+          "type": "Numerical",
+          "questionText": "Two angles forming a linear pair are in the ratio 2 : 3. Find the measure of the smaller angle in degrees.",
+          "correctAnswer": "72",
+          "explanation": "Let the angles be 2x and 3x. Sum of linear pair = 180°. 2x + 3x = 180° ⇒ 5x = 180° ⇒ x = 36°. Smaller angle = 2 × 36° = 72°.",
+          "hints": [
+            "Sum of angles in a linear pair is 180°. Set 2x + 3x = 180°."
+          ]
+        },
+        {
+          "id": "q_7_1",
+          "chapterId": "chap_7",
+          "curriculum": "BOTH",
+          "difficulty": "Medium",
+          "type": "MCQ",
+          "questionText": "Which of the following is NOT a criterion for congruence of triangles?",
+          "options": [
+            {
+              "id": "opt_a",
+              "label": "A",
+              "text": "SAS"
+            },
+            {
+              "id": "opt_b",
+              "label": "B",
+              "text": "AAA"
+            },
+            {
+              "id": "opt_c",
+              "label": "C",
+              "text": "SSS"
+            },
+            {
+              "id": "opt_d",
+              "label": "D",
+              "text": "RHS"
+            }
+          ],
+          "correctAnswer": "B",
+          "explanation": "AAA (Angle-Angle-Angle) ensures similarity, but not congruence, because triangles with same angles can have different sizes.",
+          "hints": [
+            "Can triangles have identical angles but different scales?"
+          ]
+        }
+      ]
+    }
+  ],
+  "testAttempts": [
+    {
+      "id": "att_1",
+      "testId": "test_1",
+      "testTitle": "Chapter 1: Number Systems Mastery Test",
+      "chapterId": "chap_1",
+      "studentId": "user_student_1",
+      "score": 18,
+      "maxScore": 20,
+      "percentage": 90,
+      "correctCount": 3,
+      "incorrectCount": 1,
+      "unansweredCount": 0,
+      "timeTakenSeconds": 780,
+      "submittedAt": "2026-09-28T14:32:00.000Z",
+      "answers": {
+        "q_1_1": "C",
+        "q_1_2": "24",
+        "q_1_3": "A",
+        "q_1_4": "B"
+      }
+    },
+    {
+      "id": "att_2",
+      "testId": "test_2",
+      "testTitle": "Chapter 2: Polynomials & Identities Challenge",
+      "chapterId": "chap_2",
+      "studentId": "user_student_1",
+      "score": 12,
+      "maxScore": 15,
+      "percentage": 80,
+      "correctCount": 2,
+      "incorrectCount": 1,
+      "unansweredCount": 0,
+      "timeTakenSeconds": 840,
+      "submittedAt": "2026-10-01T16:15:00.000Z",
+      "answers": {
+        "q_2_1": "C",
+        "q_2_2": "14",
+        "q_2_3": "0"
+      }
+    }
+  ],
+  "practiceSessions": [
+    {
+      "id": "prac_1791173575822",
+      "studentId": "user_student_1",
+      "chapterId": "chap_1",
+      "chapterName": "Number Systems",
+      "questionsAttempted": 1,
+      "correctAnswers": 0,
+      "accuracy": 0,
+      "timeSpentSeconds": 5,
+      "completedAt": "2026-10-05T04:12:55.822Z"
+    }
+  ],
+  "progress": [
+    {
+      "id": "prog_1",
+      "studentId": "user_student_1",
+      "chapterId": "chap_1",
+      "completionPercentage": 95,
+      "questionsSolved": 25,
+      "testsTaken": 2,
+      "masteryLevel": "Master",
+      "isWeakTopic": false,
+      "lastStudiedAt": "2026-10-05T04:12:55.822Z"
+    },
+    {
+      "id": "prog_2",
+      "studentId": "user_student_1",
+      "chapterId": "chap_2",
+      "completionPercentage": 88,
+      "questionsSolved": 22,
+      "testsTaken": 1,
+      "masteryLevel": "Proficient",
+      "isWeakTopic": false,
+      "lastStudiedAt": "2026-10-01T16:15:00Z"
+    },
+    {
+      "id": "prog_3",
+      "studentId": "user_student_1",
+      "chapterId": "chap_3",
+      "completionPercentage": 90,
+      "questionsSolved": 16,
+      "testsTaken": 1,
+      "masteryLevel": "Master",
+      "isWeakTopic": false,
+      "lastStudiedAt": "2026-09-26T12:00:00Z"
+    },
+    {
+      "id": "prog_4",
+      "studentId": "user_student_1",
+      "chapterId": "chap_4",
+      "completionPercentage": 75,
+      "questionsSolved": 14,
+      "testsTaken": 1,
+      "masteryLevel": "Intermediate",
+      "isWeakTopic": false,
+      "lastStudiedAt": "2026-09-24T15:30:00Z"
+    },
+    {
+      "id": "prog_5",
+      "studentId": "user_student_1",
+      "chapterId": "chap_5",
+      "completionPercentage": 80,
+      "questionsSolved": 12,
+      "testsTaken": 1,
+      "masteryLevel": "Proficient",
+      "isWeakTopic": false,
+      "lastStudiedAt": "2026-09-20T11:00:00Z"
+    },
+    {
+      "id": "prog_6",
+      "studentId": "user_student_1",
+      "chapterId": "chap_6",
+      "completionPercentage": 70,
+      "questionsSolved": 15,
+      "testsTaken": 1,
+      "masteryLevel": "Intermediate",
+      "isWeakTopic": false,
+      "lastStudiedAt": "2026-09-18T14:00:00Z"
+    },
+    {
+      "id": "prog_7",
+      "studentId": "user_student_1",
+      "chapterId": "chap_7",
+      "completionPercentage": 60,
+      "questionsSolved": 12,
+      "testsTaken": 1,
+      "masteryLevel": "Intermediate",
+      "isWeakTopic": true,
+      "lastStudiedAt": "2026-09-15T09:30:00Z"
+    },
+    {
+      "id": "prog_8",
+      "studentId": "user_student_1",
+      "chapterId": "chap_8",
+      "completionPercentage": 55,
+      "questionsSolved": 9,
+      "testsTaken": 0,
+      "masteryLevel": "Novice",
+      "isWeakTopic": true,
+      "lastStudiedAt": "2026-09-12T16:00:00Z"
+    },
+    {
+      "id": "prog_9",
+      "studentId": "user_student_1",
+      "chapterId": "chap_9",
+      "completionPercentage": 45,
+      "questionsSolved": 6,
+      "testsTaken": 0,
+      "masteryLevel": "Novice",
+      "isWeakTopic": true,
+      "lastStudiedAt": "2026-09-10T17:00:00Z"
+    },
+    {
+      "id": "prog_10",
+      "studentId": "user_student_1",
+      "chapterId": "chap_10",
+      "completionPercentage": 65,
+      "questionsSolved": 10,
+      "testsTaken": 1,
+      "masteryLevel": "Intermediate",
+      "isWeakTopic": false,
+      "lastStudiedAt": "2026-09-08T10:00:00Z"
+    },
+    {
+      "id": "prog_11",
+      "studentId": "user_student_1",
+      "chapterId": "chap_11",
+      "completionPercentage": 40,
+      "questionsSolved": 5,
+      "testsTaken": 0,
+      "masteryLevel": "Novice",
+      "isWeakTopic": true,
+      "lastStudiedAt": "2026-09-05T13:00:00Z"
+    },
+    {
+      "id": "prog_12",
+      "studentId": "user_student_1",
+      "chapterId": "chap_12",
+      "completionPercentage": 70,
+      "questionsSolved": 11,
+      "testsTaken": 1,
+      "masteryLevel": "Intermediate",
+      "isWeakTopic": false,
+      "lastStudiedAt": "2026-09-02T15:00:00Z"
+    },
+    {
+      "id": "prog_13",
+      "studentId": "user_student_1",
+      "chapterId": "chap_13",
+      "completionPercentage": 85,
+      "questionsSolved": 14,
+      "testsTaken": 1,
+      "masteryLevel": "Proficient",
+      "isWeakTopic": false,
+      "lastStudiedAt": "2026-08-30T11:00:00Z"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "ach_1",
+      "code": "FIRST_TEST",
+      "title": "First Test",
+      "description": "Complete your very first timed chapter assessment.",
+      "icon": "🏆",
+      "category": "Milestone",
+      "points": 100
+    },
+    {
+      "id": "ach_2",
+      "code": "STREAK_7",
+      "title": "7 Day Streak",
+      "description": "Log in and solve math problems for 7 consecutive days.",
+      "icon": "🔥",
+      "category": "Consistency",
+      "points": 150
+    },
+    {
+      "id": "ach_3",
+      "code": "CHAPS_5",
+      "title": "5 Chapters Completed",
+      "description": "Reach over 80% completion in 5 Class 9 curriculum chapters.",
+      "icon": "📚",
+      "category": "Mastery",
+      "points": 250
+    },
+    {
+      "id": "ach_4",
+      "code": "ACCURACY_90",
+      "title": "90% Accuracy",
+      "description": "Achieve 90% or higher score on any standardized chapter test.",
+      "icon": "🎯",
+      "category": "Mastery",
+      "points": 200
+    },
+    {
+      "id": "ach_5",
+      "code": "SOLVED_100",
+      "title": "100 Questions Solved",
+      "description": "Successfully attempt and solve 100 Class 9 mathematics questions.",
+      "icon": "⭐",
+      "category": "Milestone",
+      "points": 300
+    },
+    {
+      "id": "ach_6",
+      "code": "MATH_MASTER",
+      "title": "Mathematics Master",
+      "description": "Demonstrate proficiency across both Algebra and Geometry units.",
+      "icon": "🚀",
+      "category": "Mastery",
+      "points": 500
+    },
+    {
+      "id": "ach_7",
+      "code": "AI_EXPLORER",
+      "title": "AI Tutor Explorer",
+      "description": "Engage in 10+ interactive conceptual doubt-solving sessions with EduMathAI Tutor.",
+      "icon": "💡",
+      "category": "AI Tutor",
+      "points": 150
+    }
+  ],
+  "studentAchievements": [
+    {
+      "id": "sa_1",
+      "studentId": "user_student_1",
+      "achievementId": "ach_1",
+      "unlockedAt": "2026-09-28T14:32:00Z"
+    },
+    {
+      "id": "sa_2",
+      "studentId": "user_student_1",
+      "achievementId": "ach_2",
+      "unlockedAt": "2026-10-02T08:00:00Z"
+    },
+    {
+      "id": "sa_3",
+      "studentId": "user_student_1",
+      "achievementId": "ach_3",
+      "unlockedAt": "2026-09-26T12:00:00Z"
+    },
+    {
+      "id": "sa_4",
+      "studentId": "user_student_1",
+      "achievementId": "ach_4",
+      "unlockedAt": "2026-09-28T14:32:00Z"
+    },
+    {
+      "id": "sa_5",
+      "studentId": "user_student_1",
+      "achievementId": "ach_5",
+      "unlockedAt": "2026-10-01T16:15:00Z"
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "rec_1",
+      "studentId": "user_student_1",
+      "title": "Revise Circle Theorems & Cyclic Properties",
+      "reason": "Your accuracy on Chapter 9 (Circles) is currently 45%. Reviewing the Central Angle Theorem will boost your test performance.",
+      "actionType": "REVISE",
+      "targetChapterId": "chap_9",
+      "targetChapterTitle": "Circles",
+      "priority": "High",
+      "completed": false,
+      "createdAt": "2026-10-03T10:00:00Z"
+    },
+    {
+      "id": "rec_2",
+      "studentId": "user_student_1",
+      "title": "Practice Triangles Congruence Criteria for 15 mins",
+      "reason": "Target SAS, ASA, and RHS criteria questions to reinforce proof confidence in Chapter 7.",
+      "actionType": "PRACTICE",
+      "targetChapterId": "chap_7",
+      "targetChapterTitle": "Triangles",
+      "priority": "High",
+      "completed": false,
+      "createdAt": "2026-10-03T11:30:00Z"
+    },
+    {
+      "id": "rec_3",
+      "studentId": "user_student_1",
+      "title": "Take the Surface Areas & Volumes Chapter Test",
+      "reason": "You reviewed 3D formulas recently. Validating your formula mastery with a timed test will solidify your recall.",
+      "actionType": "TEST",
+      "targetChapterId": "chap_11",
+      "targetChapterTitle": "Surface Areas and Volumes",
+      "priority": "Medium",
+      "completed": false,
+      "createdAt": "2026-10-04T08:00:00Z"
+    },
+    {
+      "id": "rec_4",
+      "studentId": "user_student_1",
+      "title": "Great Job! Accuracy improved by 12%",
+      "reason": "Your practice score in Polynomials increased from 68% to 80% this week. Keep up the consistent momentum!",
+      "actionType": "PRACTICE",
+      "targetChapterId": "chap_2",
+      "targetChapterTitle": "Polynomials",
+      "priority": "Low",
+      "completed": true,
+      "createdAt": "2026-10-02T15:00:00Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif_1",
+      "userId": "user_student_1",
+      "title": "Chapter Test Score Available",
+      "message": "Your score for Chapter 1 (Number Systems) is 90%. Excellent job on rational exponents!",
+      "type": "TEST_RESULT",
+      "isRead": false,
+      "createdAt": "2026-09-28T14:33:00Z",
+      "actionUrl": "/student/tests"
+    },
+    {
+      "id": "notif_2",
+      "userId": "user_student_1",
+      "title": "New Homework Assigned",
+      "message": "Dr. Sunita Rao assigned \"Circles & Chords Proof Practice\" due in 3 days.",
+      "type": "ASSIGNMENT",
+      "isRead": false,
+      "createdAt": "2026-10-03T09:00:00Z",
+      "actionUrl": "/student/practice"
+    },
+    {
+      "id": "notif_3",
+      "userId": "user_student_1",
+      "title": "Achievement Unlocked! 🔥 7 Day Streak",
+      "message": "Congratulations! You kept your mathematics study streak alive for 7 days in a row.",
+      "type": "ACHIEVEMENT",
+      "isRead": true,
+      "createdAt": "2026-10-02T08:05:00Z",
+      "actionUrl": "/student/achievements"
+    },
+    {
+      "id": "notif_4",
+      "userId": "user_student_1",
+      "title": "Daily Practice Reminder",
+      "message": "Maintain your momentum today: 10 quick geometry questions await you!",
+      "type": "REMINDER",
+      "isRead": true,
+      "createdAt": "2026-10-04T07:30:00Z",
+      "actionUrl": "/student/practice"
+    }
+  ],
+  "chatSessions": [],
+  "chatMessages": [],
+  "assignments": [
+    {
+      "id": "asg_1",
+      "classroomId": "class_9a",
+      "teacherId": "user_teacher_1",
+      "chapterId": "chap_9",
+      "chapterName": "Circles",
+      "title": "Circles & Chords Proof Practice",
+      "description": "Solve textbook exercise 9.2 problem numbers 1 through 5 and practice identifying cyclic quadrilateral opposite angle sums.",
+      "dueDate": "2026-10-08T23:59:59Z",
+      "totalMarks": 25,
+      "createdAt": "2026-10-03T09:00:00Z"
+    },
+    {
+      "id": "asg_2",
+      "classroomId": "class_9a",
+      "teacherId": "user_teacher_1",
+      "chapterId": "chap_7",
+      "chapterName": "Triangles",
+      "title": "Triangles Congruence Theorem Verification",
+      "description": "Submit step-by-step proofs for SAS vs AAA difference and solve 4 numerical problems on isosceles triangles.",
+      "dueDate": "2026-10-12T23:59:59Z",
+      "totalMarks": 20,
+      "createdAt": "2026-10-02T11:00:00Z"
+    }
+  ],
+  "assignmentSubmissions": [
+    {
+      "id": "sub_1",
+      "assignmentId": "asg_1",
+      "studentId": "user_student_1",
+      "studentName": "Aarav Sharma",
+      "score": 23,
+      "feedback": "Excellent work on Theorem 9.1 proof. Minor diagram labeling note.",
+      "status": "Graded",
+      "submittedAt": "2026-10-04T11:20:00Z"
+    }
+  ],
+  "activityLogs": [
+    {
+      "id": "act_1",
+      "userId": "user_student_1",
+      "userRole": "STUDENT",
+      "userName": "Aarav Sharma",
+      "action": "TEST_SUBMITTED",
+      "details": "Completed Chapter 1 Number Systems test with 90% accuracy.",
+      "timestamp": "2026-09-28T14:32:00Z"
+    },
+    {
+      "id": "act_2",
+      "userId": "user_student_1",
+      "userRole": "STUDENT",
+      "userName": "Aarav Sharma",
+      "action": "ACHIEVEMENT_EARNED",
+      "details": "Unlocked \"🔥 7 Day Streak\" badge.",
+      "timestamp": "2026-10-02T08:00:00Z"
+    },
+    {
+      "id": "act_3",
+      "userId": "user_teacher_1",
+      "userRole": "TEACHER",
+      "userName": "Dr. Sunita Rao",
+      "action": "ASSIGNMENT_CREATED",
+      "details": "Published \"Circles & Chords Proof Practice\" for Class 9-A.",
+      "timestamp": "2026-10-03T09:00:00Z"
+    },
+    {
+      "id": "act_4",
+      "userId": "user_student_1",
+      "userRole": "STUDENT",
+      "userName": "Aarav Sharma",
+      "action": "AI_TUTOR_SESSION",
+      "details": "Consulted EduMathAI Tutor regarding Cyclic Quadrilateral theorems.",
+      "timestamp": "2026-10-03T18:40:00Z"
+    }
+  ]
+}
